@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace PierreHenry\Tests\Container;
+namespace PierreHenry\Container\Tests;
 
 use Phake;
 use PHPUnit\Framework\TestCase;
