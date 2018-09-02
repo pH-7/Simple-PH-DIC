@@ -1,6 +1,13 @@
 {
   "name": "ph-7/dependency-injection-container",
-  "description": "Simple PHP 7.1+ Dependency Injection Container Library.",
+  "description": "Simple PHP 7.1+ Dependency Injection Container (DIC) Library.",
+  "keywords": [
+    "dependency injection",
+    "injection",
+    "container",
+    "DIC",
+    "DI"
+  ],
   "type": "library",
   "homepage": "https://github.com/pH-7/dependency-injection-container",
   "authors": [
