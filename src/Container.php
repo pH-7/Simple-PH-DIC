@@ -51,6 +51,12 @@ class Container implements ContainerInterface
 
     private function retrieve(string $id)
     {
-        return $this->provider[$id]->getService();
+        static $instance;
+
+        if (empty($instance[$id])) {
+            $instance[$id] = $this->provider[$id]->getService();
+        }
+
+        return $instance[$id];
     }
 }
