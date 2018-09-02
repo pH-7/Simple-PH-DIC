@@ -5,7 +5,10 @@ The "P.H.'s DIC" is a simple PHP 7.1+ **Dependency Injection Container**'s libra
 
 ## Usage
 
-Register your new DIC as below (FYI, for this example I use the Symfony's HttpFoundation Request):
+Register your new DIC as below (FYI, for this example I use the Symfony's HttpFoundation Request).
+
+
+Let's create your provider class with an [anonymous class](http://php.net/manual/en/language.oop5.anonymous.php) that implements the `\PierreHenry\Container\Providable` interface.
 
 ```php
 use PierreHenry\Container\Providable;
