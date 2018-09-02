@@ -9,6 +9,7 @@
     "DI"
   ],
   "type": "library",
+  "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/pH-7/dependency-injection-container",
   "authors": [
     {

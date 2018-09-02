@@ -48,4 +48,4 @@ You can keep in touch at *hi {{AT}} ph7 [[D0T]] me*!
 
 ## License
 
-Under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+Under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) or later.
