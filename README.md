@@ -1,6 +1,6 @@
 # P.H.'s Dependency Injection Container Library
 
-The "P.H.'s DIC" is a simple PHP 7.1+ **Dependency Injection Container**'s library useful for your next big thing.
+The "P.H.'s DIC" is a simple and lightweight PHP 7.1+ **Dependency Injection Container**'s library which lets you manage your dependencies easily for your next great project 🎉
 
 
 ## Usage
