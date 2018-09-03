@@ -8,13 +8,17 @@ The "P.H.'s DIC" is a simple and lightweight PHP 7.1+ **Dependency Injection Con
 Register your new DIC as below (FYI, for this example I use the [Symfony's HttpFoundation](https://packagist.org/packages/symfony/http-foundation) Request).
 
 
-Let's create your provider class with an [anonymous class](http://php.net/manual/en/language.oop5.anonymous.php) that implements the `\PierreHenry\Container\Providable` interface.
+For the first example, let's create your provider class with an [anonymous class](http://php.net/manual/en/language.oop5.anonymous.php) that implements the `\PierreHenry\Container\Providable` interface.
 
 ```php
+use PierreHenry\Container\Container;
 use PierreHenry\Container\Providable;
 use Symfony\Component\HttpFoundation\Request;
 
-$this->container->register(
+$container = new Container();
+
+// Register your container
+$container->register(
     'example.symfony.httprequest',
     new class implements Providable
     {
@@ -25,6 +29,41 @@ $this->container->register(
     }
 );
 
+// Retrieve the container
+$httpRequest = $container->get('example.symfony.httprequest');
+
+// Use it
+$request = $httpRequest->request;
+if ($request->get('get_var')) {
+    echo '"get var" exists';
+} else {
+    echo 'The "get_var" hasen't been requested';
+}
+```
+
+### Another Example...
+
+```php
+use PierreHenry\Container\Container;
+use PierreHenry\Container\Providable;
+
+$container = new Container();
+$container->register(
+    'stubs.date.datetime',
+    new class implements Providable
+    {
+        public function getService()
+        {
+            return new \DateTime('now', new \DateTimeZone('America/Chicago'));
+        }
+    }
+);
+
+// Retrieve the container
+$date = $container->get('stubs.date.datetime');
+
+// Use it
+echo $date->format('m-d-Y H:i:s');
 ```
 
 
