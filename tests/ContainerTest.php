@@ -48,6 +48,25 @@ class ContainerTest extends TestCase
         );
     }
 
+    public function testGetContainerThatReturnsDateTime(): void
+    {
+        $this->container->register(
+            'test.stubs.date.datetime',
+            new class implements Providable
+            {
+                public function getService()
+                {
+                    return new \DateTime();
+                }
+            }
+        );
+
+        $this->assertInstanceOf(
+            \DateTime::class,
+            $this->container->get('test.stubs.date.datetime')
+        );
+    }
+
     public function testGetNonExistentContainer(): void
     {
         $this->expectException(ContainerNotFoundException::class);
