@@ -33,11 +33,11 @@ $container->register(
 $httpRequest = $container->get('example.symfony.httprequest');
 
 // Use it
-$request = $httpRequest->request;
+$request = $httpRequest->request; // $_POST body params
 if ($request->get('get_var')) {
-    echo '"get var" exists';
+    echo '$_POST["get var"] exists';
 } else {
-    echo 'The "get_var" hasen't been requested';
+    echo '"get_var" has not been requested';
 }
 ```
 
