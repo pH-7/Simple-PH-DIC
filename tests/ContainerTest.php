@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace PierreHenry\Container\Tests;
 
+use DateTime;
 use Phake;
 use PHPUnit\Framework\TestCase;
 use PierreHenry\Container\Container;
@@ -54,15 +55,15 @@ class ContainerTest extends TestCase
             'test.stubs.date.datetime',
             new class implements Providable
             {
-                public function getService()
+                public function getService(): DateTime
                 {
-                    return new \DateTime();
+                    return new DateTime();
                 }
             }
         );
 
         $this->assertInstanceOf(
-            \DateTime::class,
+            DateTime::class,
             $this->container->get('test.stubs.date.datetime')
         );
     }
