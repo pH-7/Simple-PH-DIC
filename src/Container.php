@@ -9,9 +9,9 @@ declare(strict_types=1);
 
 namespace PierreHenry\Container;
 
+use PierreHenry\Container\Exception\Container as ContainerException;
 use PierreHenry\Container\Exception\ContainerNotFound as ContainerNotFoundException;
 use PierreHenry\Container\Exception\Provider as ProviderException;
-use PierreHenry\Container\Exception\Container as ContainerException;
 use Psr\Container\ContainerInterface;
 
 class Container implements ContainerInterface
