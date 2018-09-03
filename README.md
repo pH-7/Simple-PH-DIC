@@ -44,6 +44,8 @@ if ($request->get('get_var')) {
 ### Another Example...
 
 ```php
+use DateTime;
+use DateTimeZone;
 use PierreHenry\Container\Container;
 use PierreHenry\Container\Providable;
 
@@ -52,9 +54,9 @@ $container->register(
     'stubs.date.datetime',
     new class implements Providable
     {
-        public function getService()
+        public function getService(): DateTime
         {
-            return new \DateTime('now', new \DateTimeZone('America/Chicago'));
+            return new DateTime('now', new DateTimeZone('America/Chicago'));
         }
     }
 );
