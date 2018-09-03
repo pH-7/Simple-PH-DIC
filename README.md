@@ -3,6 +3,19 @@
 The "P.H.'s DIC" is a simple and lightweight PHP 7.1+ **Dependency Injection Container**'s library which lets you manage your dependencies easily for your next great project 🎉
 
 
+## Requirements
+
+* [PHP 7.1](http://php.net/releases/7_1_0.php) or newer
+* [Composer](https://getcomposer.org)
+
+
+## Installation
+
+```bash
+composer require ph-7/dependency-injection-container
+```
+
+
 ## Usage
 
 Register your new DIC as below (FYI, for this example I use the [Symfony's HttpFoundation](https://packagist.org/packages/symfony/http-foundation) Request).
@@ -67,12 +80,6 @@ $date = $container->get('stubs.date.datetime');
 // Use it
 echo $date->format('m-d-Y H:i:s');
 ```
-
-
-## The Requirements
-
-* [PHP 7.1](http://php.net/releases/7_1_0.php) or newer
-* [Composer](https://getcomposer.org)
 
 
 ## Inspired By...
