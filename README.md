@@ -94,6 +94,12 @@ Hi 😉 I am [Pierre-Henry Soria](http://ph7.me), "[PierreHenry.be](http://pierr
 You can keep in touch at *hi {{AT}} ph7 [[D0T]] me*!
 
 
+## Passion Drives Me! 🚀
+
+Love programming! 😊 Check out other exciting projects I previously did such as **[Lifyzer Healthy Food](https://github.com/Lifyzer)**, which gives lots of details about what you eat and allow you do scan your food items 🌯
+Another project I'm proud of is the **[Social Dating WebApp Builder Project](https://github.com/pH7Software/)** I started 8 years ago ☀️
+
+
 ## License
 
 Under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) or later.
