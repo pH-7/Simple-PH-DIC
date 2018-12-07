@@ -1,24 +1,26 @@
 # P.H.'s Dependency Injection Container Library
 
+
+## Summary ⏳
 The "P.H.'s DIC" is a simple and lightweight PHP 7.1+ **Dependency Injection Container**'s library which lets you manage your dependencies easily for your next great project 🎉
 
 ![PHP Dependency Injection Container](dependency-injection.svg)
 
 
-## Requirements
+## Requirements ⚙
 
 * [PHP 7.1](http://php.net/releases/7_1_0.php) or newer
 * [Composer](https://getcomposer.org)
 
 
-## Installation
+## Installation 📓
 
 ```bash
 composer require ph-7/dependency-injection-container
 ```
 
 
-## Usage
+## Usage 🎮
 
 Register your new DIC as below (FYI, for this example I use the [Symfony's HttpFoundation](https://packagist.org/packages/symfony/http-foundation) Request).
 
@@ -84,7 +86,7 @@ echo $date->format('m-d-Y H:i:s');
 ```
 
 
-## Inspired By...
+## Inspired By... 🧠
 
 This project is highly inspired by my [DIC](https://github.com/Lifyzer/Lifyzer-WebApp-CMS/tree/master/Server/Core/Container) I built for another [side-project](https://lifyzer.com).
 
@@ -102,6 +104,6 @@ Love programming! 😊 Check out other exciting projects I previously did such a
 Another project I'm proud of is the **[Social Dating WebApp Builder Project](https://github.com/pH7Software/)** I started 8 years ago ☀️
 
 
-## License
+## License ⚖
 
 Under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) or later.
