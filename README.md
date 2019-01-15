@@ -9,8 +9,8 @@ The "P.H.'s DIC" is a simple and lightweight PHP 7.1+ **Dependency Injection Con
 
 ## Requirements ⚙
 
-* [PHP 7.1](http://php.net/releases/7_1_0.php) or newer
-* [Composer](https://getcomposer.org)
+* 🐘 [PHP 7.1](http://php.net/releases/7_1_0.php) or newer
+* 🎻 [Composer](https://getcomposer.org)
 
 
 ## Installation 📓
@@ -58,7 +58,7 @@ if ($request->get('get_var')) {
 }
 ```
 
-### Another Example...
+### Another Example... 🎯
 
 ```php
 use DateTime;
