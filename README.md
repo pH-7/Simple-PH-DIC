@@ -93,7 +93,6 @@ This project is highly inspired by my [DIC](https://github.com/Lifyzer/Lifyzer-W
 
 ## ...Who Am I...? 🤔
 
-
 [![Pierre-Henry Soria](https://avatars0.githubusercontent.com/u/1325411?s=200)](http://pierrehenry.be "My personal website :-)")
 
 Hi there! 😉 I'm [Pierre-Henry Soria](http://ph7.me), "[PierreHenry.be](http://pierrehenry.be)™": a cool passionate Belgian software engineer :belgium: :smiley:
