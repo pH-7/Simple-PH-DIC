@@ -13,10 +13,10 @@ The "P.H.'s DIC" is a simple and lightweight PHP 7.1+ **Dependency Injection Con
 * 🎻 [Composer](https://getcomposer.org)
 
 
-## Installation 📓
+## Installation (with Composer) 📓
 
 ```bash
-composer require ph-7/dependency-injection-container
+composer require ph-7/phonedetector
 ```
 
 
